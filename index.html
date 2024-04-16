@@ -19,6 +19,19 @@
   <link href="css/font-awesome.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
+
+    <style>
+    /* Add this CSS to ensure images are centered on all screen sizes */
+    .service_section .img-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .service_section img {
+      max-width: 100%;  /* Ensures the image is responsive and does not overflow its container */
+      height: auto;  /* Maintains the aspect ratio of the image */
+    }
+  </style>
 </head>
 
 <body>
@@ -103,7 +116,7 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <div class="box">
+          <div class="box"> 
             <div class="img-box">
               <img src="images/s5.png" alt="">
             </div>

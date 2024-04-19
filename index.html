@@ -20,16 +20,25 @@
   <link href="css/responsive.css" rel="stylesheet" />
 
   <style>
-    /* Centering images within the service section like the team section */
-    .service_section .img-box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+<style>
+  /* Existing styles */
+  .service_section .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .service_section .img-box img {
+    max-width: 100%;  /* Responsive image scaling */
+    height: auto;  /* Maintain image aspect ratio */
+  }
+  /* New mobile-specific styles */
+  @media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .service_section {
+      background-color: white !important;
     }
-    .service_section .img-box img {
-      max-width: 100%;  /* Responsive image scaling */
-      height: auto;  /* Maintain image aspect ratio */
-    }
+  }
+</style>
+
   </style>
 </head>
 
